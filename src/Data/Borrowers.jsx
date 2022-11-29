@@ -26,14 +26,28 @@ function Listado() {
         <div>
         {Borrowers.map((value, index )=>{
           return (
-              <div className="contenido" key={index}> 
-                  <p>{value.borrower}</p>
-                  <p>{value.addres}</p>
-              </div>
+            <section className="seccion-1"  key={index}>
+            <div className="container">
+               <div className="row ">
+               <div className="col-md-3" >
+                    <div className="card" style={{width:"18rem"}}>
+                        <p id="id">{value.id}</p>
+                         <div className="card-body">
+                            <p>{value.addres}</p>
+                            <p>{value.borrower}</p>
+                    </div>
+                    </div>
+                </div> 
+                </div> 
+                </div>
+            
+        </section>
+
           )
         }
         )}
       </div>
+
      );
 }
 

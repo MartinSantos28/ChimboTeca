@@ -58,22 +58,39 @@ import '../assets/style/listado.css'
             year:"2010",
             author:"Kirsten Miller"
         },
+        
     ]
 
  
  
 
 function Listado() {
+    
+
     return ( 
         <div>
         {books.map((value, index )=>{
           return (
-              <div className="contenido" key={index}>
-                 <img src={(value.img)} />
-                  <p>{value.tittle}</p>
-                  <p>{value.author}</p>
-                  <p>{value.year}</p>
-              </div>
+              
+            <section className="seccion-1"  key={index}>
+                <div className="container">
+                   <div className="row ">
+                   <div className="col-md-3" >
+                        <div className="card" style={{width:"18rem"}}>
+                            <p id="id">{value.id}</p>
+                             <img src={value.img} className="card-img-top" alt="..."/>
+                             <div className="card-body">
+                             <p>{value.author}</p>
+                             <p>{value.year}</p>
+                             <p>{value.tittle}</p>
+                        </div>
+                        </div>
+                    </div> 
+                    </div> 
+                    </div>
+                
+            </section>
+                
           )
         }
         )}

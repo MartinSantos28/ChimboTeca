@@ -1,16 +1,23 @@
-div .contenido{
+.container{
   /*******/
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  float: left;
-  margin: 30px;
-  border-radius: 15px;
-    text-align: center;
-    background-color: #8673F3    ;
-    height: auto;
-      width: 210px;
+ float: left;
+ margin: 30px;
+ border-radius: 15px;
+ text-align: center;
+ background-color: #8673F3    ;
+ height: auto;
+ width: auto;
 }
 
 img{
   padding-top: 10px;
-  width: 60px;
+  width: 150px;
+  height: 150px;
+  left: 81px;
+  top: 150px;
+}
+
+#id {
+  margin-right: 250px;
 }

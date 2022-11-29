@@ -10,7 +10,7 @@ function Home() {
 
     useEffect(() => {
         if (!isLogued)
-            navigate("/Home")
+            navigate("/NotFound")
     }, [])
 
     return ( 

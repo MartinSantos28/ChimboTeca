@@ -13,30 +13,48 @@ header {
     position: relative;
 }
 
-header img {
-    top: 5px;
-    width: 70px;
-    position: absolute;
+ .logo img {
+    width: 95px;
+    height: 100px;
     
-    left: 10px;
+    top: -10px;
+   
 }
 
 header h1 {
+    padding-top: 5px;
     position: absolute;
     left: 70px;
-    top: 1px;
+    top: 50px;
     font-size: 35px;
     color: white;
 }
 
 header h2 {
     float: right;
-    margin: 50px;
-    margin-top: 27px;
+    margin: 30px;
+    margin-top: -50px;
     font-size: 20;
+}
+.link{
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+.link:active{
     color: white;
 }
-
+.link:visited{
+    color: white;
+}
+.link:focus{
+    border-bottom: 1px solid;
+    color: white;
+}
+.link:active{
+    background-color: #3183c7;
+    color:#3181c7;
+}
 header h2:hover {
     box-shadow: 0 0 10px 0 #3181c7 inset, 0 0 10px 4px #3183c7;
     background-color: rgb(0, 76, 197);

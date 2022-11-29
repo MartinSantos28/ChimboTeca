@@ -14,11 +14,7 @@ header {
     position: relative;
 }
 
-header img {
-    width: 80px;
-    position: absolute;
-    left: 10px;
-}
+
 
 header h1 {
     position: absolute;

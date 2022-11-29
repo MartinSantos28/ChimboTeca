@@ -1,14 +1,15 @@
-import { Link } from 'react-router-dom';
+
 import logo from '../assets/img/Biblioteca.png'
-import '../assets/style/header.css'
+import '../assets/style/headerhome.css'
 
 
 function Header() {
   return (
     <header>
+      <div className='logo'>
         <img src={logo}></img>
         <h1>ChimboTeca</h1>
-
+        </div>
     </header>
   );
 }
