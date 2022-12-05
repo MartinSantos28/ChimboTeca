@@ -16,9 +16,9 @@ header {
 
 
 
-header h1 {
+.logo span {
     position: absolute;
-    left: 100px;
+    left: 150px;
     top: 1px;
     font-size: 35px;
     color: white;

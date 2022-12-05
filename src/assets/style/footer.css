@@ -1,10 +1,9 @@
 
 footer {
-  background-color:  #0b226b;
+  background-color:  #212529;
   position:fixed;
-  left:0px;
   bottom:0px;
-  height:30px;
+  height:35px;
   width:100%;
   color: white;
 }

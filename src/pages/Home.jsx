@@ -1,7 +1,7 @@
 import { Navigate,useNavigate } from "react-router-dom";
 import { useContext, useEffect } from 'react';
 import UserContext from "../context/UserContext";
-import Header from "../components/HeaderHome";
+import Header from "../components/Header";
 import HomeBody from "../Bodies/homeBody";
 import Footer from "../components/Footer";
 function Home() {
@@ -10,14 +10,13 @@ function Home() {
 
     useEffect(() => {
         if (!isLogued)
-            navigate("/NotFound")
+            navigate("/NotLogged")
     }, [])
 
     return ( 
     <>
     <Header></Header>
-    <HomeBody></HomeBody>
-    <Footer></Footer>
+
     </>
         );
 }

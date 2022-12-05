@@ -5,12 +5,17 @@ import '../assets/style/headerhome.css'
 
 function Header() {
   return (
-    <header>
-      <div className='logo'>
-        <img src={logo}></img>
-        <h1>ChimboTeca</h1>
-        </div>
-    </header>
+    <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div className="container-fluid">
+      <a className="navbar-brand" href="#">ChimboTeca</a>
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="collapsibleNavbar">
+        
+      </div>
+    </div>
+  </nav>
   );
 }
 export default Header;

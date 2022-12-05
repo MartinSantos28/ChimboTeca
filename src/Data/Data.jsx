@@ -7,7 +7,13 @@ import Eternos from "../assets/img/Eternos.jpg"
 import Catching from "../assets/img/CatchingFire.jpg"
 import Mockingjay from "../assets/img/Mockingjay.jpg"
 import '../assets/style/listado.css'
-
+ export const users=[
+    {
+        id:1,
+        userName:"MartinSanGuz",
+        pwsd:"123"
+    }
+  ]
   const  books= [
         {
             id:1,
@@ -65,9 +71,9 @@ import '../assets/style/listado.css'
  
 
 function Listado() {
-    
+        
 
-    return ( 
+    return (  
         <div>
         {books.map((value, index )=>{
           return (
@@ -75,17 +81,16 @@ function Listado() {
             <section className="seccion-1"  key={index}>
                 <div className="container">
                    <div className="row ">
-                   <div className="col-md-3" >
-                        <div className="card" style={{width:"18rem"}}>
-                            <p id="id">{value.id}</p>
-                             <img src={value.img} className="card-img-top" alt="..."/>
-                             <div className="card-body">
-                             <p>{value.author}</p>
-                             <p>{value.year}</p>
-                             <p>{value.tittle}</p>
+                   <div className="card p-5" style={{width:"18rem"}}>
+                        <img src={value.img} className="card-img-top" alt="..."/>
+                        <div className="card-body">
+                            <h5 className="card-title text-white">{value.tittle}</h5>
+                            <p className="card-text text-white">{value.author}</p>
+                            <p className="card-text text-white">{value.year}</p>
+                            
+                            
                         </div>
-                        </div>
-                    </div> 
+                    </div>
                     </div> 
                     </div>
                 
@@ -94,6 +99,7 @@ function Listado() {
           )
         }
         )}
+        
       </div>
      );
 }

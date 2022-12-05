@@ -29,15 +29,17 @@ function Listado() {
             <section className="seccion-1"  key={index}>
             <div className="container">
                <div className="row ">
-               <div className="col-md-3" >
+               
                     <div className="card" style={{width:"18rem"}}>
                         <p id="id">{value.id}</p>
                          <div className="card-body">
-                            <p>{value.addres}</p>
+                         <p className="card-text text-white">Nombre del rentador</p>
                             <p>{value.borrower}</p>
+                        <p className="card-text text-white">Nombre del rentador</p>
+                            <p>{value.addres}</p>
                     </div>
                     </div>
-                </div> 
+                 
                 </div> 
                 </div>
             

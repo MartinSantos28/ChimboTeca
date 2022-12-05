@@ -6,19 +6,23 @@ import Book from "../pages/Book"
 import Borrower from "../pages/Borrower";
 import UserContext from "../context/UserContext";
 import Home from "../pages/Home";
+import NotLogged from "../pages/NotLogged";
+import Login from "../pages/Login";
 function App() {
-  const [isLogued, setIsLogued] = useState(true);
+  const [isLogued, setIsLogued] = useState(false);
   return (
     <BrowserRouter>
       <UserContext.Provider value={{ isLogued, setIsLogued }}>
         <Routes>
-          <Route path="/" element={<Book />} />
+          <Route path="/" element={<Login />} />
           <Route path="/Home" element={<Home/>} />
           <Route path="/Book" element={<Book />} />
           <Route path="/Borrow" element={<Borrows />} />
           <Route path="/Borrower" element={<Borrower />} />
           <Route path="/*" element={<NotFound />} />
-        </Routes>
+          <Route path="/NotLogged" element={<NotLogged/>}/>
+          <Route path="/Login" element={<Login/>} />
+          </Routes>
       </UserContext.Provider>
     </BrowserRouter>
   );

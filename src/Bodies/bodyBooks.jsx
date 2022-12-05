@@ -1,19 +1,12 @@
 
 import Listado from '../Data/Data.jsx';
 
-import '../assets/style/bodyBooks.css'
 function BodyBooks() {
     return (  
         <div>
-            <div id='titulo'>
-            <h1>Los libros disponibles son:</h1>
-            <div>
-
+            <p  className="fs-1 px-4 p-3 m-3">Libros Disponibles</p>
             <Listado></Listado>
-            </div>
-
-            </div>
-                    </div>
+        </div>
      );
 }
 
