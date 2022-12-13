@@ -9,7 +9,7 @@ import Home from "../pages/Home";
 import NotLogged from "../pages/NotLogged";
 import Login from "../pages/Login";
 function App() {
-  const [isLogued, setIsLogued] = useState(false);
+  const [isLogued, setIsLogued] = useState(true);
   return (
     <BrowserRouter>
       <UserContext.Provider value={{ isLogued, setIsLogued }}>

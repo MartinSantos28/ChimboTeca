@@ -12,7 +12,7 @@ function NotFound() {
                 <p className="lead">
                     The page you’re looking for doesn’t exist.
                   </p>
-                <span className="btn btn-primary"><Link id="gohome"to="/Home">Go Home</Link></span>
+                <span className="btn btn-primary"><Link id="gohome"to="/Book"><h4 className="text-white">Go Home</h4></Link></span>
             </div>
         </div>
             </div>

@@ -23,7 +23,6 @@ git commit -m 'deploy'
 # if you are deploying to https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:MartinSantos28/appwebC2.git main:gh-pages
+if you are deploying to https://MartinSantos28.github.io/<REPO>
+ git push -f git@github.com:MartinSantos28/ChimboTeca.git main:gh-pages
 
-cd -

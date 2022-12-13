@@ -12,7 +12,7 @@ function NotLogged() {
                 <p className="lead">
                     Please sign 
                   </p>
-                <span className="btn btn-primary"><Link id="gohome"to="/Login">Sign in</Link></span>
+                <span className="btn btn-primary"><Link id="gohome"to="/Login"><span className="text-white">Sign in</span></Link></span>
             </div>
         </div>
             </div>
